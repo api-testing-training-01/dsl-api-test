@@ -1,0 +1,555 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "required": [
+    "id",
+    "name",
+    "desc",
+    "descData",
+    "closed",
+    "idOrganization",
+    "idEnterprise",
+    "pinned",
+    "url",
+    "shortUrl",
+    "prefs",
+    "labelNames",
+    "limits"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "string",
+      "title": "The Id Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "5e7115897e4c95472ed19a93"
+      ]
+    },
+    "name": {
+      "$id": "#/properties/name",
+      "type": "string",
+      "title": "The Name Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "New Board with Java"
+      ]
+    },
+    "desc": {
+      "$id": "#/properties/desc",
+      "type": "string",
+      "title": "The Desc Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "This is a test with java and rest assure"
+      ]
+    },
+    "descData": {
+      "$id": "#/properties/descData",
+      "title": "The Descdata Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "closed": {
+      "$id": "#/properties/closed",
+      "type": "boolean",
+      "title": "The Closed Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "idOrganization": {
+      "$id": "#/properties/idOrganization",
+      "title": "The Idorganization Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "idEnterprise": {
+      "$id": "#/properties/idEnterprise",
+      "title": "The Identerprise Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "pinned": {
+      "$id": "#/properties/pinned",
+      "type": "boolean",
+      "title": "The Pinned Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "url": {
+      "$id": "#/properties/url",
+      "type": "string",
+      "title": "The Url Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "https://trello.com/b/YQ5NRFQQ/new-board-with-java"
+      ]
+    },
+    "shortUrl": {
+      "$id": "#/properties/shortUrl",
+      "type": "string",
+      "title": "The Shorturl Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "https://trello.com/b/YQ5NRFQQ"
+      ]
+    },
+    "prefs": {
+      "$id": "#/properties/prefs",
+      "type": "object",
+      "title": "The Prefs Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "canBeEnterprise": true,
+          "backgroundImageScaled": null,
+          "backgroundImage": null,
+          "backgroundTile": false,
+          "backgroundTopColor": "#0079BF",
+          "cardAging": "regular",
+          "isTemplate": false,
+          "canBePublic": true,
+          "backgroundBottomColor": "#0079BF",
+          "hideVotes": false,
+          "backgroundBrightness": "dark",
+          "calendarFeedEnabled": false,
+          "selfJoin": true,
+          "canBePrivate": true,
+          "voting": "disabled",
+          "canInvite": true,
+          "canBeOrg": true,
+          "permissionLevel": "private",
+          "comments": "members",
+          "backgroundColor": "#0079BF",
+          "invitations": "members",
+          "background": "blue",
+          "cardCovers": true
+        }
+      ],
+      "required": [
+        "permissionLevel",
+        "hideVotes",
+        "voting",
+        "comments",
+        "invitations",
+        "selfJoin",
+        "cardCovers",
+        "isTemplate",
+        "cardAging",
+        "calendarFeedEnabled",
+        "background",
+        "backgroundImage",
+        "backgroundImageScaled",
+        "backgroundTile",
+        "backgroundBrightness",
+        "backgroundColor",
+        "backgroundBottomColor",
+        "backgroundTopColor",
+        "canBePublic",
+        "canBeEnterprise",
+        "canBeOrg",
+        "canBePrivate",
+        "canInvite"
+      ],
+      "properties": {
+        "permissionLevel": {
+          "$id": "#/properties/prefs/properties/permissionLevel",
+          "type": "string",
+          "title": "The Permissionlevel Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "private"
+          ]
+        },
+        "hideVotes": {
+          "$id": "#/properties/prefs/properties/hideVotes",
+          "type": "boolean",
+          "title": "The Hidevotes Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "voting": {
+          "$id": "#/properties/prefs/properties/voting",
+          "type": "string",
+          "title": "The Voting Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "disabled"
+          ]
+        },
+        "comments": {
+          "$id": "#/properties/prefs/properties/comments",
+          "type": "string",
+          "title": "The Comments Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "members"
+          ]
+        },
+        "invitations": {
+          "$id": "#/properties/prefs/properties/invitations",
+          "type": "string",
+          "title": "The Invitations Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "members"
+          ]
+        },
+        "selfJoin": {
+          "$id": "#/properties/prefs/properties/selfJoin",
+          "type": "boolean",
+          "title": "The Selfjoin Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "cardCovers": {
+          "$id": "#/properties/prefs/properties/cardCovers",
+          "type": "boolean",
+          "title": "The Cardcovers Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "isTemplate": {
+          "$id": "#/properties/prefs/properties/isTemplate",
+          "type": "boolean",
+          "title": "The Istemplate Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "cardAging": {
+          "$id": "#/properties/prefs/properties/cardAging",
+          "type": "string",
+          "title": "The Cardaging Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "regular"
+          ]
+        },
+        "calendarFeedEnabled": {
+          "$id": "#/properties/prefs/properties/calendarFeedEnabled",
+          "type": "boolean",
+          "title": "The Calendarfeedenabled Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "background": {
+          "$id": "#/properties/prefs/properties/background",
+          "type": "string",
+          "title": "The Background Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "blue"
+          ]
+        },
+        "backgroundImage": {
+          "$id": "#/properties/prefs/properties/backgroundImage",
+          "title": "The Backgroundimage Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "backgroundImageScaled": {
+          "$id": "#/properties/prefs/properties/backgroundImageScaled",
+          "title": "The Backgroundimagescaled Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "backgroundTile": {
+          "$id": "#/properties/prefs/properties/backgroundTile",
+          "type": "boolean",
+          "title": "The Backgroundtile Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "backgroundBrightness": {
+          "$id": "#/properties/prefs/properties/backgroundBrightness",
+          "type": "string",
+          "title": "The Backgroundbrightness Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "dark"
+          ]
+        },
+        "backgroundColor": {
+          "$id": "#/properties/prefs/properties/backgroundColor",
+          "type": "string",
+          "title": "The Backgroundcolor Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "#0079BF"
+          ]
+        },
+        "backgroundBottomColor": {
+          "$id": "#/properties/prefs/properties/backgroundBottomColor",
+          "type": "string",
+          "title": "The Backgroundbottomcolor Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "#0079BF"
+          ]
+        },
+        "backgroundTopColor": {
+          "$id": "#/properties/prefs/properties/backgroundTopColor",
+          "type": "string",
+          "title": "The Backgroundtopcolor Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "#0079BF"
+          ]
+        },
+        "canBePublic": {
+          "$id": "#/properties/prefs/properties/canBePublic",
+          "type": "boolean",
+          "title": "The Canbepublic Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "canBeEnterprise": {
+          "$id": "#/properties/prefs/properties/canBeEnterprise",
+          "type": "boolean",
+          "title": "The Canbeenterprise Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "canBeOrg": {
+          "$id": "#/properties/prefs/properties/canBeOrg",
+          "type": "boolean",
+          "title": "The Canbeorg Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "canBePrivate": {
+          "$id": "#/properties/prefs/properties/canBePrivate",
+          "type": "boolean",
+          "title": "The Canbeprivate Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "canInvite": {
+          "$id": "#/properties/prefs/properties/canInvite",
+          "type": "boolean",
+          "title": "The Caninvite Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        }
+      }
+    },
+    "labelNames": {
+      "$id": "#/properties/labelNames",
+      "type": "object",
+      "title": "The Labelnames Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "red": "",
+          "orange": "",
+          "purple": "",
+          "black": "",
+          "pink": "",
+          "lime": "",
+          "blue": "",
+          "green": "",
+          "sky": "",
+          "yellow": ""
+        }
+      ],
+      "required": [
+        "green",
+        "yellow",
+        "orange",
+        "red",
+        "purple",
+        "blue",
+        "sky",
+        "lime",
+        "pink",
+        "black"
+      ],
+      "properties": {
+        "green": {
+          "$id": "#/properties/labelNames/properties/green",
+          "type": "string",
+          "title": "The Green Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "yellow": {
+          "$id": "#/properties/labelNames/properties/yellow",
+          "type": "string",
+          "title": "The Yellow Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "orange": {
+          "$id": "#/properties/labelNames/properties/orange",
+          "type": "string",
+          "title": "The Orange Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "red": {
+          "$id": "#/properties/labelNames/properties/red",
+          "type": "string",
+          "title": "The Red Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "purple": {
+          "$id": "#/properties/labelNames/properties/purple",
+          "type": "string",
+          "title": "The Purple Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "blue": {
+          "$id": "#/properties/labelNames/properties/blue",
+          "type": "string",
+          "title": "The Blue Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "sky": {
+          "$id": "#/properties/labelNames/properties/sky",
+          "type": "string",
+          "title": "The Sky Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "lime": {
+          "$id": "#/properties/labelNames/properties/lime",
+          "type": "string",
+          "title": "The Lime Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "pink": {
+          "$id": "#/properties/labelNames/properties/pink",
+          "type": "string",
+          "title": "The Pink Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "black": {
+          "$id": "#/properties/labelNames/properties/black",
+          "type": "string",
+          "title": "The Black Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        }
+      }
+    },
+    "limits": {
+      "$id": "#/properties/limits",
+      "type": "object",
+      "title": "The Limits Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {}
+      ]
+    }
+  }
+}
