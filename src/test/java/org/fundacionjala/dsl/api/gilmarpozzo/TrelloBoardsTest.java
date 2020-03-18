@@ -24,9 +24,8 @@ public class TrelloBoardsTest {
         return boardId;
     }
 
-    public String setBoardId(final String id) {
+    public void setBoardId(final String id) {
         boardId = id;
-        return boardId;
     }
 
     public RequestSpecification requestHeader() {
@@ -100,6 +99,5 @@ public class TrelloBoardsTest {
         File deleteBoardSchemaFile = new File(SCHEMA_RESOURCES + "deleteBoardSchema.json");
         assertEquals(OK_STATUS_CODE, actualStatusCode);
         responseDeleteBoard.then().assertThat().body(matchesJsonSchema(deleteBoardSchemaFile));
-        removeBoard(getBoardId());
     }
 }
