@@ -8,12 +8,14 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 import static io.restassured.RestAssured.config;
 import static io.restassured.config.ParamConfig.UpdateStrategy.REPLACE;
 import static io.restassured.config.ParamConfig.paramConfig;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 import static org.junit.Assert.assertEquals;
 
 public class DslApiTest {
@@ -55,6 +57,10 @@ public class DslApiTest {
         assertEquals(OK_STATUS_CODE, actualStatusCode);
         String boardId = response.jsonPath().getJsonObject("id");
         boardList.add(boardId);
+        File schemaFile = new File("src/test/resources/alexGarcia/postSchema.json");
+        response.then().assertThat().body(matchesJsonSchema(schemaFile));
+
+
     }
 
     @Test
@@ -66,6 +72,9 @@ public class DslApiTest {
 
         Response getResponse = initialValues.get("/boards/" + boardId);
         assertEquals(OK_STATUS_CODE, getResponse.statusCode());
+
+        File schemaFile = new File("src/test/resources/alexGarcia/getSchema.json");
+        getResponse.then().assertThat().body(matchesJsonSchema(schemaFile));
     }
 
     @Test
@@ -80,6 +89,9 @@ public class DslApiTest {
                 .queryParam("desc", "Aprendiendo a usar RestAssured")
                 .put("/boards/" + boardId);
         assertEquals(OK_STATUS_CODE, updateResponse.statusCode());
+
+        File schemaFile = new File("src/test/resources/alexGarcia/putSchema.json");
+        updateResponse.then().assertThat().body(matchesJsonSchema(schemaFile));
     }
 
     @Test
@@ -91,5 +103,8 @@ public class DslApiTest {
         Response deleteResponse = initialValues
                 .delete("/boards/" + boardId);
         assertEquals(OK_STATUS_CODE, deleteResponse.statusCode());
+
+        File schemaFile = new File("src/test/resources/alexGarcia/deleteSchema.json");
+        deleteResponse.then().assertThat().body(matchesJsonSchema(schemaFile));
     }
 }
