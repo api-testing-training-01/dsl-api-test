@@ -43,7 +43,6 @@ public class JackyAssignment04 {
         Response responsePost = createBoard();
 
         int actualStatusCode = responsePost.getStatusCode();
-        String body = responsePost.getBody().asString();
         assertEquals(OK_STATUS_CODE, actualStatusCode);
         File schemaFile = new File("src/test/resources/jacky/postSchema.json");
         responsePost.then().assertThat().body(matchesJsonSchema(schemaFile));
