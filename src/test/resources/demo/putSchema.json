@@ -1,5 +1,9 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
   "type": "object",
+  "title": "The Root Schema",
+  "description": "The root schema comprises the entire JSON document.",
   "required": [
     "id",
     "name",
@@ -12,8 +16,7 @@
     "url",
     "shortUrl",
     "prefs",
-    "labelNames",
-    "limits"
+    "labelNames"
   ],
   "properties": {
     "id": {
@@ -23,7 +26,7 @@
       "description": "An explanation about the purpose of this instance.",
       "default": "",
       "examples": [
-        "5e6f8eaf7e6af369e18a4461"
+        "5e712b87f950ca2490cbc6f9"
       ]
     },
     "name": {
@@ -33,7 +36,7 @@
       "description": "An explanation about the purpose of this instance.",
       "default": "",
       "examples": [
-        "test02FV"
+        "JAVA - UPDATED"
       ]
     },
     "desc": {
@@ -43,7 +46,7 @@
       "description": "An explanation about the purpose of this instance.",
       "default": "",
       "examples": [
-        ""
+        "This is a demo"
       ]
     },
     "descData": {
@@ -100,7 +103,7 @@
       "description": "An explanation about the purpose of this instance.",
       "default": "",
       "examples": [
-        "https://trello.com/b/puBzEveV/test02fv"
+        "https://trello.com/b/dD0DZmLC/java-updated"
       ]
     },
     "shortUrl": {
@@ -110,7 +113,7 @@
       "description": "An explanation about the purpose of this instance.",
       "default": "",
       "examples": [
-        "https://trello.com/b/puBzEveV"
+        "https://trello.com/b/dD0DZmLC"
       ]
     },
     "prefs": {
@@ -121,29 +124,29 @@
       "default": {},
       "examples": [
         {
-          "backgroundBrightness": "dark",
-          "calendarFeedEnabled": false,
-          "selfJoin": true,
-          "canBePrivate": true,
-          "voting": "disabled",
-          "canInvite": true,
-          "canBeOrg": true,
-          "permissionLevel": "private",
-          "comments": "members",
-          "backgroundColor": "#0079BF",
-          "background": "blue",
-          "cardCovers": true,
-          "invitations": "members",
-          "canBeEnterprise": true,
-          "backgroundImageScaled": null,
-          "backgroundImage": null,
           "backgroundTile": false,
           "backgroundTopColor": "#0079BF",
           "cardAging": "regular",
           "canBePublic": true,
           "backgroundBottomColor": "#0079BF",
           "isTemplate": false,
-          "hideVotes": false
+          "hideVotes": false,
+          "backgroundBrightness": "dark",
+          "calendarFeedEnabled": false,
+          "selfJoin": true,
+          "canBePrivate": true,
+          "voting": "disabled",
+          "permissionLevel": "private",
+          "canBeOrg": true,
+          "canInvite": true,
+          "comments": "members",
+          "backgroundColor": "#0079BF",
+          "invitations": "members",
+          "cardCovers": true,
+          "background": "blue",
+          "canBeEnterprise": true,
+          "backgroundImage": null,
+          "backgroundImageScaled": null
         }
       ],
       "required": [
@@ -410,7 +413,6 @@
       "default": {},
       "examples": [
         {
-          "black": "",
           "pink": "",
           "lime": "",
           "blue": "",
@@ -418,8 +420,9 @@
           "sky": "",
           "yellow": "",
           "red": "",
+          "purple": "",
           "orange": "",
-          "purple": ""
+          "black": ""
         }
       ],
       "required": [
@@ -517,10 +520,11 @@
         },
         "pink": {
           "$id": "#/properties/labelNames/properties/pink",
-          "type": "string",
+
           "title": "The Pink Schema",
           "description": "An explanation about the purpose of this instance.",
           "default": "",
+
           "examples": [
             ""
           ]
@@ -536,16 +540,6 @@
           ]
         }
       }
-    },
-    "limits": {
-      "$id": "#/properties/limits",
-      "type": "object",
-      "title": "The Limits Schema",
-      "description": "An explanation about the purpose of this instance.",
-      "default": {},
-      "examples": [
-        {}
-      ]
     }
   }
 }

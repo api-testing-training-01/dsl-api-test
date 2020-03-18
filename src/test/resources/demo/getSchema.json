@@ -12,8 +12,7 @@
     "url",
     "shortUrl",
     "prefs",
-    "labelNames",
-    "limits"
+    "labelNames"
   ],
   "properties": {
     "id": {
@@ -121,29 +120,29 @@
       "default": {},
       "examples": [
         {
-          "backgroundBrightness": "dark",
-          "calendarFeedEnabled": false,
-          "selfJoin": true,
-          "canBePrivate": true,
           "voting": "disabled",
-          "canInvite": true,
-          "canBeOrg": true,
           "permissionLevel": "private",
+          "canBeOrg": true,
+          "canInvite": true,
           "comments": "members",
           "backgroundColor": "#0079BF",
           "background": "blue",
           "cardCovers": true,
           "invitations": "members",
           "canBeEnterprise": true,
-          "backgroundImageScaled": null,
           "backgroundImage": null,
+          "backgroundImageScaled": null,
           "backgroundTile": false,
           "backgroundTopColor": "#0079BF",
-          "cardAging": "regular",
-          "canBePublic": true,
-          "backgroundBottomColor": "#0079BF",
           "isTemplate": false,
-          "hideVotes": false
+          "cardAging": "regular",
+          "backgroundBottomColor": "#0079BF",
+          "canBePublic": true,
+          "hideVotes": false,
+          "backgroundBrightness": "dark",
+          "calendarFeedEnabled": false,
+          "selfJoin": true,
+          "canBePrivate": true
         }
       ],
       "required": [
@@ -410,8 +409,6 @@
       "default": {},
       "examples": [
         {
-          "black": "",
-          "pink": "",
           "lime": "",
           "blue": "",
           "green": "",
@@ -419,7 +416,9 @@
           "yellow": "",
           "red": "",
           "orange": "",
-          "purple": ""
+          "purple": "",
+          "black": "",
+          "pink": ""
         }
       ],
       "required": [
@@ -536,16 +535,6 @@
           ]
         }
       }
-    },
-    "limits": {
-      "$id": "#/properties/limits",
-      "type": "object",
-      "title": "The Limits Schema",
-      "description": "An explanation about the purpose of this instance.",
-      "default": {},
-      "examples": [
-        {}
-      ]
     }
   }
 }
