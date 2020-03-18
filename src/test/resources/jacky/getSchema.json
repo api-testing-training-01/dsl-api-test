@@ -1,0 +1,798 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "desc",
+    "descData",
+    "closed",
+    "idOrganization",
+    "pinned",
+    "url",
+    "shortUrl",
+    "prefs",
+    "labelNames",
+    "actions",
+    "lists"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "string"
+    },
+    "name": {
+      "$id": "#/properties/name",
+      "type": "string"
+    },
+    "desc": {
+      "$id": "#/properties/desc",
+      "type": "string"
+    },
+    "descData": {
+      "$id": "#/properties/descData",
+      "title": "The Descdata Schema"
+    },
+    "closed": {
+      "$id": "#/properties/closed",
+      "type": "boolean"
+    },
+    "idOrganization": {
+      "$id": "#/properties/idOrganization",
+      "type": "string"
+    },
+    "pinned": {
+      "$id": "#/properties/pinned",
+      "type": "boolean"
+    },
+    "url": {
+      "$id": "#/properties/url",
+      "type": "string"
+    },
+    "shortUrl": {
+      "$id": "#/properties/shortUrl",
+      "type": "string"
+    },
+    "prefs": {
+      "$id": "#/properties/prefs",
+      "type": "object",
+      "required": [
+        "permissionLevel",
+        "hideVotes",
+        "voting",
+        "comments",
+        "invitations",
+        "selfJoin",
+        "cardCovers",
+        "isTemplate",
+        "cardAging",
+        "calendarFeedEnabled",
+        "background",
+        "backgroundImage",
+        "backgroundImageScaled",
+        "backgroundTile",
+        "backgroundBrightness",
+        "backgroundBottomColor",
+        "backgroundTopColor",
+        "canBePublic",
+        "canBeEnterprise",
+        "canBeOrg",
+        "canBePrivate",
+        "canInvite"
+      ],
+      "properties": {
+        "permissionLevel": {
+          "$id": "#/properties/prefs/properties/permissionLevel",
+          "type": "string"
+        },
+        "hideVotes": {
+          "$id": "#/properties/prefs/properties/hideVotes",
+          "type": "boolean"
+        },
+        "voting": {
+          "$id": "#/properties/prefs/properties/voting",
+          "type": "string"
+        },
+        "comments": {
+          "$id": "#/properties/prefs/properties/comments",
+          "type": "string"
+        },
+        "invitations": {
+          "$id": "#/properties/prefs/properties/invitations",
+          "type": "string"
+        },
+        "selfJoin": {
+          "$id": "#/properties/prefs/properties/selfJoin",
+          "type": "boolean"
+        },
+        "cardCovers": {
+          "$id": "#/properties/prefs/properties/cardCovers",
+          "type": "boolean"
+        },
+        "isTemplate": {
+          "$id": "#/properties/prefs/properties/isTemplate",
+          "type": "boolean"
+        },
+        "cardAging": {
+          "$id": "#/properties/prefs/properties/cardAging",
+          "type": "string"
+        },
+        "calendarFeedEnabled": {
+          "$id": "#/properties/prefs/properties/calendarFeedEnabled",
+          "type": "boolean"
+        },
+        "background": {
+          "$id": "#/properties/prefs/properties/background",
+          "type": "string"
+        },
+        "backgroundImage": {
+          "$id": "#/properties/prefs/properties/backgroundImage",
+          "type": "string"
+        },
+        "backgroundImageScaled": {
+          "$id": "#/properties/prefs/properties/backgroundImageScaled",
+          "type": "array",
+          "default": [],
+          "items": {
+            "$id": "#/properties/prefs/properties/backgroundImageScaled/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "url": "https://trello-backgrounds.s3.amazonaws.com/SharedBackground/67x100/8d2c878225b2c00a23a992410d32487e/photo-1584050487096-0f76a42bd339.jpg",
+                "width": 67.0,
+                "height": 100.0
+              },
+              {
+                "url": "https://trello-backgrounds.s3.amazonaws.com/SharedBackground/128x192/8d2c878225b2c00a23a992410d32487e/photo-1584050487096-0f76a42bd339.jpg",
+                "width": 128.0,
+                "height": 192.0
+              },
+              {
+                "url": "https://trello-backgrounds.s3.amazonaws.com/SharedBackground/320x480/8d2c878225b2c00a23a992410d32487e/photo-1584050487096-0f76a42bd339.jpg",
+                "width": 320.0,
+                "height": 480.0
+              },
+              {
+                "url": "https://trello-backgrounds.s3.amazonaws.com/SharedBackground/640x960/8d2c878225b2c00a23a992410d32487e/photo-1584050487096-0f76a42bd339.jpg",
+                "width": 640.0,
+                "height": 960.0
+              },
+              {
+                "url": "https://trello-backgrounds.s3.amazonaws.com/SharedBackground/683x1024/8d2c878225b2c00a23a992410d32487e/photo-1584050487096-0f76a42bd339.jpg",
+                "width": 683.0,
+                "height": 1024.0
+              },
+              {
+                "url": "https://trello-backgrounds.s3.amazonaws.com/SharedBackground/854x1280/8d2c878225b2c00a23a992410d32487e/photo-1584050487096-0f76a42bd339.jpg",
+                "width": 854.0,
+                "height": 1280.0
+              },
+              {
+                "url": "https://trello-backgrounds.s3.amazonaws.com/SharedBackground/1281x1920/8d2c878225b2c00a23a992410d32487e/photo-1584050487096-0f76a42bd339.jpg",
+                "width": 1281.0,
+                "height": 1920.0
+              },
+              {
+                "url": "https://trello-backgrounds.s3.amazonaws.com/SharedBackground/1067x1600/8d2c878225b2c00a23a992410d32487e/photo-1584050487096-0f76a42bd339.jpg",
+                "width": 1067.0,
+                "height": 1600.0
+              },
+              {
+                "url": "https://trello-backgrounds.s3.amazonaws.com/SharedBackground/original/880591f2d580a01ee09b0cccd6623990/photo-1584050487096-0f76a42bd339",
+                "width": 1366.0,
+                "height": 2048.0
+              }
+            ],
+            "required": [
+              "width",
+              "height",
+              "url"
+            ],
+            "properties": {
+              "width": {
+                "$id": "#/properties/prefs/properties/backgroundImageScaled/items/properties/width",
+                "type": "integer",
+                "title": "The Width Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  67
+                ]
+              },
+              "height": {
+                "$id": "#/properties/prefs/properties/backgroundImageScaled/items/properties/height",
+                "type": "integer",
+                "title": "The Height Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  100
+                ]
+              },
+              "url": {
+                "$id": "#/properties/prefs/properties/backgroundImageScaled/items/properties/url",
+                "type": "string",
+                "title": "The Url Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "https://trello-backgrounds.s3.amazonaws.com/SharedBackground/67x100/8d2c878225b2c00a23a992410d32487e/photo-1584050487096-0f76a42bd339.jpg"
+                ]
+              }
+            }
+          }
+        },
+        "backgroundTile": {
+          "$id": "#/properties/prefs/properties/backgroundTile",
+          "type": "boolean"
+        },
+        "backgroundBrightness": {
+          "$id": "#/properties/prefs/properties/backgroundBrightness",
+          "type": "string"
+        },
+        "backgroundBottomColor": {
+          "$id": "#/properties/prefs/properties/backgroundBottomColor",
+          "type": "string"
+        },
+        "backgroundTopColor": {
+          "$id": "#/properties/prefs/properties/backgroundTopColor",
+          "type": "string"
+        },
+        "canBePublic": {
+          "$id": "#/properties/prefs/properties/canBePublic",
+          "type": "boolean"
+        },
+        "canBeEnterprise": {
+          "$id": "#/properties/prefs/properties/canBeEnterprise",
+          "type": "boolean"
+        },
+        "canBeOrg": {
+          "$id": "#/properties/prefs/properties/canBeOrg",
+          "type": "boolean"
+        },
+        "canBePrivate": {
+          "$id": "#/properties/prefs/properties/canBePrivate",
+          "type": "boolean"
+        },
+        "canInvite": {
+          "$id": "#/properties/prefs/properties/canInvite",
+          "type": "boolean"
+        }
+      }
+    },
+    "labelNames": {
+      "$id": "#/properties/labelNames",
+      "type": "object",
+      "default": {},
+      "examples": [
+        {
+          "red": "",
+          "purple": "",
+          "orange": "",
+          "black": "",
+          "pink": "",
+          "lime": "",
+          "blue": "",
+          "green": "",
+          "sky": "",
+          "yellow": ""
+        }
+      ],
+      "required": [
+        "green",
+        "yellow",
+        "orange",
+        "red",
+        "purple",
+        "blue",
+        "sky",
+        "lime",
+        "pink",
+        "black"
+      ],
+      "properties": {
+        "green": {
+          "$id": "#/properties/labelNames/properties/green",
+          "type": "string",
+          "title": "The Green Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "yellow": {
+          "$id": "#/properties/labelNames/properties/yellow",
+          "type": "string",
+          "title": "The Yellow Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "orange": {
+          "$id": "#/properties/labelNames/properties/orange",
+          "type": "string",
+          "title": "The Orange Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "red": {
+          "$id": "#/properties/labelNames/properties/red",
+          "type": "string",
+          "title": "The Red Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "purple": {
+          "$id": "#/properties/labelNames/properties/purple",
+          "type": "string",
+          "title": "The Purple Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "blue": {
+          "$id": "#/properties/labelNames/properties/blue",
+          "type": "string",
+          "title": "The Blue Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "sky": {
+          "$id": "#/properties/labelNames/properties/sky",
+          "type": "string",
+          "title": "The Sky Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "lime": {
+          "$id": "#/properties/labelNames/properties/lime",
+          "type": "string",
+          "title": "The Lime Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "pink": {
+          "$id": "#/properties/labelNames/properties/pink",
+          "type": "string",
+          "title": "The Pink Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "black": {
+          "$id": "#/properties/labelNames/properties/black",
+          "type": "string",
+          "title": "The Black Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        }
+      }
+    },
+    "actions": {
+      "$id": "#/properties/actions",
+      "type": "array",
+      "default": [],
+      "items": {
+        "$id": "#/properties/actions/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "examples": [
+          {
+            "id": "5e70d7d164905a5f44257338",
+            "data": {
+              "board": {
+                "name": "TestAutomationBoard",
+                "shortLink": "1j1r61ry",
+                "id": "5e6d4bda0713fc1589347d00"
+              },
+              "old": {
+                "name": "TestAutomation"
+              }
+            },
+            "memberCreator": {
+              "idMemberReferrer": null,
+              "fullName": "Jacky",
+              "nonPublic": {},
+              "avatarUrl": null,
+              "avatarHash": null,
+              "username": "jacky376",
+              "activityBlocked": false,
+              "id": "5751de4c3a6e0bc2c847d31d",
+              "initials": "J",
+              "nonPublicAvailable": false
+            },
+            "date": "2020-03-17T13:59:45.193Z",
+            "limits": {},
+            "idMemberCreator": "5751de4c3a6e0bc2c847d31d",
+            "type": "updateBoard"
+          },
+          {
+            "memberCreator": {
+              "idMemberReferrer": null,
+              "fullName": "Jacky",
+              "avatarUrl": null,
+              "nonPublic": {},
+              "avatarHash": null,
+              "username": "jacky376",
+              "initials": "J",
+              "id": "5751de4c3a6e0bc2c847d31d",
+              "activityBlocked": false,
+              "nonPublicAvailable": false
+            },
+            "date": "2020-03-14T21:25:46.820Z",
+            "limits": {},
+            "idMemberCreator": "5751de4c3a6e0bc2c847d31d",
+            "type": "addToOrganizationBoard",
+            "id": "5e6d4bda0713fc1589347d04",
+            "data": {
+              "organization": {
+                "id": "5751df02b67fab0115c1a48c",
+                "name": "Ptaang - Balneario"
+              },
+              "board": {
+                "shortLink": "1j1r61ry",
+                "id": "5e6d4bda0713fc1589347d00",
+                "name": "TestAutomation"
+              }
+            }
+          },
+          {
+            "id": "5e6d4bda0713fc1589347d02",
+            "data": {
+              "board": {
+                "name": "TestAutomation",
+                "shortLink": "1j1r61ry",
+                "id": "5e6d4bda0713fc1589347d00"
+              }
+            },
+            "memberCreator": {
+              "activityBlocked": false,
+              "id": "5751de4c3a6e0bc2c847d31d",
+              "initials": "J",
+              "nonPublicAvailable": false,
+              "idMemberReferrer": null,
+              "fullName": "Jacky",
+              "nonPublic": {},
+              "avatarUrl": null,
+              "avatarHash": null,
+              "username": "jacky376"
+            },
+            "date": "2020-03-14T21:25:46.814Z",
+            "limits": {},
+            "idMemberCreator": "5751de4c3a6e0bc2c847d31d",
+            "type": "createBoard"
+          }
+        ],
+        "required": [
+          "id",
+          "idMemberCreator",
+          "data",
+          "type",
+          "date",
+          "limits",
+          "memberCreator"
+        ],
+        "properties": {
+          "id": {
+            "$id": "#/properties/actions/items/properties/id",
+            "type": "string",
+            "title": "The Id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "5e70d7d164905a5f44257338"
+            ]
+          },
+          "idMemberCreator": {
+            "$id": "#/properties/actions/items/properties/idMemberCreator",
+            "type": "string",
+            "title": "The Idmembercreator Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "5751de4c3a6e0bc2c847d31d"
+            ]
+          },
+          "data": {
+            "$id": "#/properties/actions/items/properties/data",
+            "type": "object",
+            "title": "The Data Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "board": {
+                  "name": "TestAutomationBoard",
+                  "shortLink": "1j1r61ry",
+                  "id": "5e6d4bda0713fc1589347d00"
+                },
+                "old": {
+                  "name": "TestAutomation"
+                }
+              }
+            ],
+            "required": [
+              "old",
+              "board"
+            ],
+            "properties": {
+              "old": {
+                "$id": "#/properties/actions/items/properties/data/properties/old",
+                "type": "object",
+                "title": "The Old Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "name": "TestAutomation"
+                  }
+                ],
+                "required": [
+                  "name"
+                ],
+                "properties": {
+                  "name": {
+                    "$id": "#/properties/actions/items/properties/data/properties/old/properties/name",
+                    "type": "string",
+                    "title": "The Name Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "TestAutomation"
+                    ]
+                  }
+                }
+              },
+              "board": {
+                "$id": "#/properties/actions/items/properties/data/properties/board",
+                "type": "object",
+                "title": "The Board Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "name": "TestAutomationBoard",
+                    "shortLink": "1j1r61ry",
+                    "id": "5e6d4bda0713fc1589347d00"
+                  }
+                ],
+                "required": [
+                  "name",
+                  "id",
+                  "shortLink"
+                ],
+                "properties": {
+                  "name": {
+                    "$id": "#/properties/actions/items/properties/data/properties/board/properties/name",
+                    "type": "string",
+                    "title": "The Name Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "TestAutomationBoard"
+                    ]
+                  },
+                  "id": {
+                    "$id": "#/properties/actions/items/properties/data/properties/board/properties/id",
+                    "type": "string",
+                    "title": "The Id Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "5e6d4bda0713fc1589347d00"
+                    ]
+                  },
+                  "shortLink": {
+                    "$id": "#/properties/actions/items/properties/data/properties/board/properties/shortLink",
+                    "type": "string",
+                    "title": "The Shortlink Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "1j1r61ry"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "type": {
+            "$id": "#/properties/actions/items/properties/type",
+            "type": "string",
+            "title": "The Type Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "updateBoard"
+            ]
+          },
+          "date": {
+            "$id": "#/properties/actions/items/properties/date",
+            "type": "string",
+            "title": "The Date Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "2020-03-17T13:59:45.193Z"
+            ]
+          },
+          "limits": {
+            "$id": "#/properties/actions/items/properties/limits",
+            "type": "object",
+            "title": "The Limits Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {}
+            ]
+          },
+          "memberCreator": {
+            "$id": "#/properties/actions/items/properties/memberCreator",
+            "type": "object",
+            "title": "The Membercreator Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "avatarHash": null,
+                "username": "jacky376",
+                "activityBlocked": false,
+                "id": "5751de4c3a6e0bc2c847d31d",
+                "initials": "J",
+                "nonPublicAvailable": false,
+                "idMemberReferrer": null,
+                "fullName": "Jacky",
+                "nonPublic": {},
+                "avatarUrl": null
+              }
+            ],
+            "required": [
+              "id",
+              "activityBlocked",
+              "avatarHash",
+              "avatarUrl",
+              "fullName",
+              "idMemberReferrer",
+              "initials",
+              "nonPublic",
+              "nonPublicAvailable",
+              "username"
+            ],
+            "properties": {
+              "id": {
+                "$id": "#/properties/actions/items/properties/memberCreator/properties/id",
+                "type": "string",
+                "title": "The Id Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "5751de4c3a6e0bc2c847d31d"
+                ]
+              },
+              "activityBlocked": {
+                "$id": "#/properties/actions/items/properties/memberCreator/properties/activityBlocked",
+                "type": "boolean",
+                "title": "The Activityblocked Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": false,
+                "examples": [
+                  false
+                ]
+              },
+              "avatarHash": {
+                "$id": "#/properties/actions/items/properties/memberCreator/properties/avatarHash",
+                "title": "The Avatarhash Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "avatarUrl": {
+                "$id": "#/properties/actions/items/properties/memberCreator/properties/avatarUrl",
+                "title": "The Avatarurl Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "fullName": {
+                "$id": "#/properties/actions/items/properties/memberCreator/properties/fullName",
+                "type": "string",
+                "title": "The Fullname Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Jacky"
+                ]
+              },
+              "idMemberReferrer": {
+                "$id": "#/properties/actions/items/properties/memberCreator/properties/idMemberReferrer",
+                "title": "The Idmemberreferrer Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "initials": {
+                "$id": "#/properties/actions/items/properties/memberCreator/properties/initials",
+                "type": "string",
+                "title": "The Initials Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "J"
+                ]
+              },
+              "nonPublic": {
+                "$id": "#/properties/actions/items/properties/memberCreator/properties/nonPublic",
+                "type": "object",
+                "title": "The Nonpublic Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {}
+                ]
+              },
+              "nonPublicAvailable": {
+                "$id": "#/properties/actions/items/properties/memberCreator/properties/nonPublicAvailable",
+                "type": "boolean",
+                "title": "The Nonpublicavailable Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": false,
+                "examples": [
+                  false
+                ]
+              },
+              "username": {
+                "$id": "#/properties/actions/items/properties/memberCreator/properties/username",
+                "type": "string",
+                "title": "The Username Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "jacky376"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "lists": {
+      "$id": "#/properties/lists",
+      "type": "array"
+    }
+  }
+}
