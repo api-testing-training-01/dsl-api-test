@@ -54,11 +54,11 @@ public class TrelloTest {
         Response response = giveTrelloHeader().put("https://api.trello.com/1/boards/0EVI29JO?name=NewBoardfromIJDEL");
         String id = getId(response.getBody().jsonPath().getString("shortUrl"));
         String path = new StringBuilder().append(BASE_URL)
-                                         .append("id")
-                                         .append("/?")
-                                         .append(response.getBody().jsonPath().getString("name")).toString();
+                                         .append(id).toString();
 
         response = giveTrelloHeader().delete(path);
+        assertEquals(OK_STATUS_CODE, response.getStatusCode());
+        response.then().body(matchesJsonSchema(new File("src/test/resources/jorge/deleteSchema.json")));
     }
 
     public static RequestSpecification giveTrelloHeader() {
