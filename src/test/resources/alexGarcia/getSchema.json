@@ -1,0 +1,49 @@
+{
+  "$id": "http://example.com/example.json",
+  "required": [
+    "id"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "string"
+    },
+    "name": {
+      "$id": "#/properties/name",
+      "type": "string"
+    },
+    "desc": {
+      "$id": "#/properties/desc",
+      "type": "string"
+    },
+    "descData": {
+      "$id": "#/properties/descData"
+    },
+    "closed": {
+      "$id": "#/properties/closed",
+      "type": "boolean"
+    },
+    "idOrganization": {
+      "$id": "#/properties/idOrganization"
+    },
+    "idEnterprise": {
+      "$id": "#/properties/idEnterprise"
+    },
+    "pinned": {
+      "$id": "#/properties/pinned",
+      "type": "boolean"
+    },
+    "url": {
+      "$id": "#/properties/url",
+      "type": "string"
+    },
+    "shortUrl": {
+      "$id": "#/properties/shortUrl",
+      "type": "string"
+    },
+    "prefs": {
+      "$id": "#/properties/prefs",
+      "type": "object"
+    }
+  }
+}
