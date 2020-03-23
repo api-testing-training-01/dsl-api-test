@@ -35,8 +35,6 @@ public class PostBoard {
                 .post(url + "/1/boards/?key={key}&token={token}", key, token);
         int actualStatusCode = response.getStatusCode();
         assertEquals(oKStatus, actualStatusCode);
-        String actualBody = response.getBody().asString();
-        System.out.println(actualBody);
         String path = "src/test/resources/alejandraNeolopan/postSchema.json";
         response.then().assertThat().body(matchesJsonSchema(new File(path)));
 

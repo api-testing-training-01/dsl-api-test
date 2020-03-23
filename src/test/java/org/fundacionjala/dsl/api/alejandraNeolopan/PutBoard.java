@@ -48,7 +48,6 @@ public class PutBoard {
                 .when()
                 .delete(url + "/1/boards/" + idBoard + "?key={key}&token={token}", key, token);
         int actualStatusCode = response.getStatusCode();
-        String actualBody = response.getBody().asString();
         assertEquals(oKStatus, actualStatusCode);
         String path = "src/test/resources/alejandraNeolopan/putSchema.json";
         response.then().assertThat().body(matchesJsonSchema(new File(path)));

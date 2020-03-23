@@ -59,9 +59,8 @@ String cardField = "badges%2Cclosed%2Cdesc%2CidAttachmentCover%2CidBoard%2CidLis
               .queryParam("organization_memberships", "all")
                 .when()
                 .get(url + "/1/boards/" + idBoard + "?key={key}&token={token}", key, token);
-      System.out.println(idBoard);
+
         int actualStatusCode = response.getStatusCode();
-        String actualBody = response.getBody().asString();
         assertEquals(oKStatus, actualStatusCode);
         String path = "src/test/resources/alejandraNeolopan/getSchema.json";
         response.then().assertThat().body(matchesJsonSchema(new File(path)));
