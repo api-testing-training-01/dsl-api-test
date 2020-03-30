@@ -1,0 +1,7 @@
+/.allure/
+/.gradle/
+/.idea/
+/build/
+/out/
+*.iml
+/java/
